@@ -46,17 +46,16 @@ function TopBar() {
                     </NavDropdown>
                   </LinkContainer>
                   {currentUser.isAdmin === false ? (
-                    <LinkContainer to="/admin">
-                    <Nav.Link>Admin panel</Nav.Link>
-                  </LinkContainer>
-
-                  ) : (
                     <LinkContainer to="/cart">
                       <Nav.Link>
                         Cart&nbsp;{cartState.cartItems.length}
                       </Nav.Link>
                     </LinkContainer>
-                    
+
+                  ) : (
+                    <LinkContainer to="/admin">
+                      <Nav.Link>Admin panel</Nav.Link>
+                    </LinkContainer>
                   )}
                   <LinkContainer to="/orders">
                     <Nav.Link>Orders</Nav.Link>
