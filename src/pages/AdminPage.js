@@ -21,16 +21,16 @@ const AdminPage = ({history}) => {
           <h1 className="text-center p-2 text-black mb-2">Admin Panel</h1>
           <Col md={2}>
             <ButtonGroup vertical style={{ minHeight: "400px" }}>
-              <Button onClick={() => navigate("/admin/userlist",history)}>
+              <Button className="btn btn-secondary" onClick={() => navigate("/admin/userlist",history)}>
                 All Users
               </Button>
-              <Button onClick={() => navigate("/admin/pizzalist",history)}>
+              <Button className="btn btn-secondary" onClick={() => navigate("/admin/pizzalist",history)}>
                 All Pizzas
               </Button>
-              <Button onClick={() => navigate("/admin/addnewpizza",history)}>
+              <Button className="btn btn-secondary" onClick={() => navigate("/admin/addnewpizza",history)}>
                 Add New Pizza
               </Button>
-              <Button onClick={() => navigate("/admin/orderlist",history)}>
+              <Button className="btn btn-secondary" onClick={() => navigate("/admin/orderlist",history)}>
                 All Orders
               </Button>
             </ButtonGroup>
